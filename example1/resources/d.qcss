@@ -1,0 +1,29 @@
+QPushButton{
+    background-color: #6496c8;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+QLabel {
+    border:2px solid blue; border-radius:10px
+
+}
+
+QLabel#b{
+    border:2px solid red; border-radius:10px
+
+}
+
+QLabel#b[level="1"]{
+    border:4px solid #0000CD; border-radius:10px
+}
+
+QLabel#b[level="2"]{
+    border:4px solid #000000; border-radius:10px
+}

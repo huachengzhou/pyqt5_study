@@ -21,6 +21,7 @@ class MyWindow(QWidget):
         self.setupObject4()
         self.setupObject5()
         self.setupObject6()
+        self.setupDeleteLater()
 
         self.show()
 
@@ -104,6 +105,26 @@ class MyWindow(QWidget):
         changeEd.connect(lambda x: print("setupObject6 连接槽3:", x))
 
         print("setupObject6 连接槽数量:",objX.receivers(changeEd))
+        pass
+
+    # 删除
+    def setupDeleteLater(self):
+        objX = QObject()
+        objY = QObject()
+
+        objX.setParent(self)
+        objY.setParent(objX)
+        objX.destroyed.connect(lambda: print("objX被释放了"))
+        objY.destroyed.connect(lambda: print("objY被释放了"))
+
+        print(f"objX:{objX}")
+        print(f"objY:{objY}")
+
+        objX.deleteLater()
+        print(objY.parent())
+        print(objX.parent())
+        print(objX.children())
+
         pass
 
     def changeQObjectNameEvent(self, e):
