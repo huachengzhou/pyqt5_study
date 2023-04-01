@@ -1,9 +1,13 @@
 [[source]]
-url = "https://pypi.org/simple"
+url = "https://pypi.douban.com/simple"
 verify_ssl = true
 name = "pypi"
 
 [packages]
+requests = "*"
+pyqt5 = "*"
+pyqt5-tools = "*"
+numpy = "*"
 
 [dev-packages]
 
