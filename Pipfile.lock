@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5aa13e02e61912bdf328b33a624c412db095a914f6e7b79636f8a2f67f185284"
+            "sha256": "8e91e238bc39923d297bb7ffdcc57daba780e5f32f789b8f07abe597504b97b6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -156,6 +156,14 @@
             "index": "pypi",
             "version": "==1.24.2"
         },
+        "packaging": {
+            "hashes": [
+                "sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2",
+                "sha256:b6ad297f8907de0fa2fe1ccbd26fdaf387f5f47c7275fedf8cce89f99446cf97"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==23.0"
+        },
         "pyqt5": {
             "hashes": [
                 "sha256:213bebd51821ed89b4d5b35bb10dbe67564228b3568f463a351a08e8b1677025",
@@ -240,6 +248,14 @@
             "markers": "python_version >= '3.8'",
             "version": "==1.0.0"
         },
+        "qdarkstyle": {
+            "hashes": [
+                "sha256:600584d625343e0ddd128de08393d3c35637786a49827f174d29aa7caa8279c1",
+                "sha256:679a38fcd040de9fac8b8cae483310302fdb12c8d912845249c41dc54974a9b2"
+            ],
+            "index": "pypi",
+            "version": "==3.1"
+        },
         "qt5-applications": {
             "hashes": [
                 "sha256:068f920b1d362baf11636a6a9df1ba2e6c99e98f429dd1eba91fba8fd621d874",
@@ -256,6 +272,22 @@
             ],
             "markers": "python_version >= '3.5'",
             "version": "==5.15.2.1.2"
+        },
+        "qtawesome": {
+            "hashes": [
+                "sha256:0db96484f3ac7a53c88279736b39b6f881a3f6bbd2163d4f0d043b74b1ef9131",
+                "sha256:0e8402af52f99f7f7a9d97adfdd715483028202ce8cb00216d9fa14fa8cbfcef"
+            ],
+            "index": "pypi",
+            "version": "==1.2.3"
+        },
+        "qtpy": {
+            "hashes": [
+                "sha256:0603c9c83ccc035a4717a12908bf6bc6cb22509827ea2ec0e94c2da7c9ed57c5",
+                "sha256:8d6d544fc20facd27360ea189592e6135c614785f0dec0b4f083289de6beb408"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==2.3.0"
         },
         "requests": {
             "hashes": [

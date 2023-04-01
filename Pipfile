@@ -8,6 +8,8 @@ requests = "*"
 pyqt5 = "*"
 pyqt5-tools = "*"
 numpy = "*"
+qdarkstyle = "*"
+qtawesome = "*"
 
 [dev-packages]
 
