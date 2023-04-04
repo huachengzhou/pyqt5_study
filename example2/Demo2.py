@@ -10,6 +10,7 @@ class MyWindow(QWidget):
     def __init__(self, title):
         super().__init__()
         self.setWindowTitle(title)
+        #  x, y , w, h
         self.setGeometry(200, 200, 600, 500)
         self.setupUi()
         self.show()
@@ -18,6 +19,7 @@ class MyWindow(QWidget):
     def setupUi(self):
         labelA = QLabel(self)
         labelA.setText("标签")
+        #  x, y , w, h
         labelA.setGeometry(100, 100, 50, 50)
         labelA.setStyleSheet(" background-color:blue;")
 

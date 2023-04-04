@@ -528,3 +528,4 @@ if __name__ == '__main__':
 ```
 
 [PyQt5参考](https://github.com/muziing/PyQt_practice)
+[其它参考](https://doc.itprojects.cn/0001.zhishi/python.0008.pyqt5rumen/index.html#/README)
