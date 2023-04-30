@@ -2,7 +2,7 @@ import sys
 
 from PyQt5.Qt import *
 
-
+import os as osUtils
 
 
 class QSSLoader:
@@ -40,8 +40,8 @@ class Window(QWidget):
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = Window()
-
-    style_file = "./resources/flatwhite/style.qss"
+    # style_file = "./resources/flatwhite/style.qss"
+    style_file = osUtils.path.join("resources","flatwhite", "style.qss")
     style_sheet = QSSLoader.read_qss_file(style_file)
     window.setStyleSheet(style_sheet)
 
