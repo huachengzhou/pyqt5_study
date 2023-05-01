@@ -4,7 +4,6 @@ from PyQt5.QtCore import Qt
 import qdarkstyle
 
 
-
 class MyWindow(QMainWindow):
 
     def __init__(self, title, parent=None):
@@ -37,17 +36,25 @@ class MyWindow(QMainWindow):
         menubar = self.menuBar()
         listMeans = ["文件", "编辑", "搜索", "视图", "编码", "语言", "设置", "工具", "宏", "运行", "插件", "窗口"]
         for meanText in listMeans:
-            fileMenu = menubar.addMenu(meanText)
+            fileMenu = QMenu(meanText, self)
+            # fileMenu = menubar.addMenu(meanText)
+            # fileMenu = menubar.addMenu(mean)
+            menubar.addMenu(fileMenu)
             impMenu = QMenu('Import', self)
             impAct = QAction('Import mail', self)
             impMenu.addAction(impAct)
 
             newAct = QAction('New', self)
+            # newAct.triggered.connect(lambda x:print('菜单被点击了'+x))
+            newAct.triggered.connect(self.toggleMenu)
 
             fileMenu.addAction(newAct)
             fileMenu.addMenu(impMenu)
 
     pass
+
+    def toggleMenu(self, state):
+        print(state)
 
 
 if __name__ == '__main__':
